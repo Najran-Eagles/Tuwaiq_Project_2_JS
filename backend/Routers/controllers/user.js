@@ -1,13 +1,14 @@
-const {user} = require('../dbCanceledTest')
+const {users} = require('../dataBase/dbUsers')
 
 
 const getAllUser = (req,res)=>{
-    res.send(user)
+    // console.log('All users')
+    res.send(users)
 }
 
 const getUser = (req,res)=>{
-    console.log(typeof user)
-    const foundUser = user.filter((elem, i) =>{
+    console.log(typeof users)
+    const foundUser = users.filter((elem, i) =>{
         return i == req.params.id 
     })
 
@@ -25,22 +26,25 @@ const getUser = (req,res)=>{
 const addNewUser = (req,res)=>{
     const addedUser = {
         name: req.body.name,
-        job: req.body.job,
-        hobby: req.body.hobby,
+        password : req.body.password,
+        nationalId : req.body.nationalId,
+        email : req.body.email
+        // isAdmin: req.body.isAdmin,
     }
+    console.log(req.body)
 
-    user.push(addedUser)
-
+    users.push(addedUser)
+console.log(addedUser)
     res.status(201).send(addedUser);
 }
 
 const updateUser = (req,res)=>{
     const userId = req.query.id
-    user.forEach((elem,i)=>{
+    users.forEach((elem,i)=>{
         if(i == userId){
             elem.name = req.body.name;
-            elem.job = req.body.job;
-            elem.hobby = req.body.hobby;
+            elem.password = req.body.password;
+            elem.isAdmin = req.body.isAdmin;
         }
     })
 }
