@@ -2,7 +2,7 @@ const users=[
 {
     id: 1,
     name:'',
-    // email:'',
+    email:'',
     nationalId:'',
     password:'',
     isAdmin:false
