@@ -2,10 +2,12 @@ import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css';
-const Header = () => {
-	return <div className="App">
 
-<Container>
+
+export default function head() {
+	return (
+		<div>
+			<Container>
   <Row>
     <Col id="head">
 
@@ -16,8 +18,14 @@ const Header = () => {
   </Row>
 </Container>
 
-	
-	</div>;
-};
+			
+		</div>
+	)
+}
 
-export default Header;
+
+
+
+
+
+

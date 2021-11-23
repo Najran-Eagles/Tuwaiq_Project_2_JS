@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import Navigation from './components/navigation/nav';
 import Header from './components/header/head';
+import Footer from './components/footer/footer';
 
 // import provider
 // import store
@@ -15,6 +16,7 @@ ReactDOM.render(
 	<Router>
 		<Navigation/>
 		<Header />
+		<Footer />
 		<App />
 		
 	</Router>,
