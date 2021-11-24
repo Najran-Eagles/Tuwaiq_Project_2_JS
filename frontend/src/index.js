@@ -7,6 +7,7 @@ import App from './App';
 import Navigation from './components/navigation/nav';
 import Header from './components/header/head';
 import SignIn from './components/signInUp/s7ignIn';
+import Footer from './components/footer/footer';
 
 // import provider
 // import store
@@ -16,7 +17,9 @@ ReactDOM.render(
 	<BrowserRouter>
 		<Navigation/>
 		<Header />
+
 		<SignIn />
+		<Footer />
 		<App />
 	</BrowserRouter>,
   document.getElementById("root")

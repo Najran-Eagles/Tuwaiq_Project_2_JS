@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './navigation.css';
 
 
-const Navigation = () => {
-	return <div className="App">
-	
-	<Nav id="nafbar"
+export default function nav() {
+  return (
+    <div>
+
+<Nav id="nafbar"
   activeKey="/home"
   onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
 >
@@ -17,16 +18,29 @@ const Navigation = () => {
 
 </Nav>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	</div>;
-};
+      
+    </div>
+  )
+}
 
-export default Navigation;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
