@@ -28,8 +28,8 @@ const addNewUser = (req,res)=>{
         name: req.body.name,
         password : req.body.password,
         nationalId : req.body.nationalId,
-        email : req.body.email
-        // isAdmin: req.body.isAdmin,
+        // email : req.body.email
+        isAdmin: req.body.isAdmin,
     }
     console.log(req.body)
 

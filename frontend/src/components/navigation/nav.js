@@ -14,6 +14,7 @@ export default function nav() {
 >
   <Nav.Item>
     <Nav.Link href="/home">English</Nav.Link>
+    
   </Nav.Item>
 
 </Nav>
