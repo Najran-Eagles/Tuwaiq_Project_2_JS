@@ -1,0 +1,12 @@
+.signIn{
+    border: solid;
+    width: 350px;
+    height: 350px;
+}
+#btnReg{
+    display: flex;
+   
+    justify-content: flex-end;
+
+    
+}
