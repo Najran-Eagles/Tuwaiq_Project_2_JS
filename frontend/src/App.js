@@ -1,18 +1,46 @@
-import React from "react";
-// import SignUp from "./components/signInUp/SignUp";
-// import Footer from "./components/footer/footer";
-import Header from "./components/header/head";
-import Navigation from "./components/navigation/nav";
-import SignIn from "./components/signInUp/SignIn";
-// import { Route } from 'react-router-dom';
+import React from 'react';
 
-export default function App() {
-  return (
-    <div>
-      {/* <Navigation /> */}
-	  <Header />
-	  <SignIn />
+import { Route, Routes } from 'react-router-dom';
+import Navigation from './components/navigation/nav';
+import Header from './components/header/head';
+import Footer from './components/footer/footer';
+import Dashboard from './components/dashboard/dash'
+// import Exam from'./components/exam/available'
 
-    </div>
-  );
+
+const App =() =>{
+return (
+<div className="App">
+
+
+       <Navigation/>
+	  
+        <Routes>
+			<Route path="/"element={<Header/>}/>
+			<Route path="/dash"element={<Dashboard/>}/>
+			{/* <Route path="/available"elemnt={<Exam/>}/> */}
+		
+		</Routes>
+		
+		<Footer />
+
+
+
+
+</div>
+
+
+
+
+
+)
+
+
+
+
+
+
 }
+
+export default App
+

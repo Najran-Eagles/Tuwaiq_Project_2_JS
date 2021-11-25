@@ -13,7 +13,7 @@ app.use(express.json());
  app.use(cors());
 
 //app routers
-app.use('/user',userRouter)
+app.use('/users',userRouter)
 
 const PORT = process.env.PORT || 5000;
 
