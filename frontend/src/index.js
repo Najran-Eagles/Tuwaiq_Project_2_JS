@@ -1,26 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Router, Route} from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 
-// import signUp from './components/registaration/signUp';
-import App from './App';
-import Navigation from './components/navigation/nav';
-import Header from './components/header/head';
-import SignIn from './components/signInUp/s7ignIn';
-import Footer from './components/footer/footer';
+
+import App from "./App";
+import Navigation from "./components/navigation/nav";
+// import Header from "./components/header/head";
+import SignIn from "./components/signInUp/SignIn";
+import Footer from "./components/footer/footer";
+import SignUp from "./components/signInUp/SignUp";
 
 // import provider
 // import store
 
 ReactDOM.render(
   // The provider will enable the child components to access the store
-	<BrowserRouter>
-		<Navigation/>
-		<Header />
-
-		<SignIn />
-		<Footer />
-		<App />
-	</BrowserRouter>,
+  <BrowserRouter>
+  <Navigation />
+    <Routes>
+      <Route path="/" element={<App />} />
+      {/* <Route pth="SignUp" element={<SignUp/>}/> */}
+      <Route path="/SignIn" element={<SignIn />} />
+      <Route path="/SignUp" element={<SignUp />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>,
   document.getElementById("root")
 );
