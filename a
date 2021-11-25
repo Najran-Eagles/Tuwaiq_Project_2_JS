@@ -1,0 +1,19 @@
+[33mcf2e252[m[33m ([m[1;36mHEAD -> [m[1;32mfrontendChanges[m[33m, [m[1;31morigin/frontendChanges[m[33m, [m[1;32mArefNasser-frontendChanges[m[33m)[m changes
+[33m1aecc01[m Merge pull request #8 from ArefNasser/singInFile
+[33m44fd8ba[m Merge branch 'main' into singInFile
+[33m363c70d[m[33m ([m[1;31morigin/singInFile[m[33m, [m[1;32msingInFile[m[33m)[m signingIn
+[33m8e1c255[m Merge pull request #7 from AHAD14/footerAhad
+[33md1434ed[m footer component
+[33m1bdb936[m Merge pull request #6 from AHAD14/footerAhad
+[33me286804[m footer added
+[33mbb35898[m Merge pull request #5 from AHAD14/signUp
+[33me46b9a4[m added sign up
+[33m5015924[m Merge pull request #4 from ArefNasser/cancelledDatabase
+[33m4a66235[m[33m ([m[1;31morigin/cancelledDatabase[m[33m, [m[1;32mcancelledDatabase[m[33m)[m added cancelled database
+[33m83ae0c2[m Merge pull request #3 from AHAD14/userDatabase
+[33m5cc4db9[m added users database
+[33m8e9c426[m Merge pull request #2 from ArefNasser/signUp
+[33m85d50a4[m[33m ([m[1;31morigin/signUp[m[33m, [m[1;32msignUp[m[33m)[m added sign up path
+[33mb75b87b[m Merge pull request #1 from AHAD14/main
+[33m4af76a2[m first_draft
+[33maece20a[m Initial commit
