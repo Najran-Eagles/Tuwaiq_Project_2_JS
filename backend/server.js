@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(cors());
 //app routers
 
+
 // app.use('/user',userRouter);
 app.use('/avialableTestForRegistration', avialableTestForRegistrationRouter );
 app.use('/cancelledTest', CancelledTestRouter);
@@ -22,6 +23,9 @@ app.use('/previousTests', previousTestsRouter);
 
 
 
+
+
+app.use('/users',userRouter)
 
 
 const PORT = process.env.PORT || 5000;
