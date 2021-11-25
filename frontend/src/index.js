@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { BrowserRouter } from 'react-router-dom';
 
 // import signUp from './components/registaration/signUp';
@@ -7,11 +8,15 @@ import App from './App';
 
 
 
-// import provider
-// import store
+import { BrowserRouter, Router, Route} from 'react-router-dom';
+import App from './App';
+
+
+
+
 
 ReactDOM.render(
-  // The provider will enable the child components to access the store
+  
 
 	<BrowserRouter>
 	

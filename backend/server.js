@@ -1,19 +1,32 @@
 const express = require('express');
 const cors = require('cors');
 const { userRouter } = require('./routers/routes/userRouter');
-
+const {avialableTestForRegistrationRouter} = require("./routers/routes/availableRouter");
+const {CancelledTestRouter} = require('./routers/routes/cancelledTestRouter');
+const {previousTestsRouter} =  require('./routers/routes/previousRouter');
 const app = express();
+app.use(express.json());
 
 //routers
 
 //built-in middlewares
-app.use(express.json());
 
 //third-party middleware
- app.use(cors());
-
+app.use(cors());
 //app routers
+
+
+// app.use('/user',userRouter);
+app.use('/avialableTestForRegistration', avialableTestForRegistrationRouter );
+app.use('/cancelledTest', CancelledTestRouter);
+app.use('/previousTests', previousTestsRouter);
+
+
+
+
+
 app.use('/users',userRouter)
+
 
 const PORT = process.env.PORT || 5000;
 
