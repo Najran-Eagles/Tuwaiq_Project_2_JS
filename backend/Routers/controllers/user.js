@@ -25,14 +25,14 @@ const getUser = (req,res)=>{
 
 const addNewUser = (req,res)=>{
     const addedUser = {
-        name: req.body.name,
+        // name: req.body.name,
         password : req.body.password,
         nationalId : req.body.nationalId,
 
 
         // email : req.body.email
 
-        isAdmin: req.body.isAdmin,
+        // isAdmin: req.body.isAdmin,
     }
     console.log(req.body)
 
