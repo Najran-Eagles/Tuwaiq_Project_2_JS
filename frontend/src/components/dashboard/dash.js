@@ -1,7 +1,10 @@
 import React from 'react'
 import {Container, Nav,NavDropdown, Dropdown, Navbar , Button,Form,FormControl} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './dashboard.css'
+import './dashboard.css';
+import Available from './available';
+import Previous from './previous';
+import Canceled from './Canceled';
 // import { useSelect } from 'react-select-search';
 
 
@@ -20,7 +23,7 @@ export default function dash() {
         </Nav.Link>
       </Nav.Item>
 	  
-      <NavDropdown  title="Dropdown"style={{Color:"black",textDecorationLine:"none"}} id="nav-dropdown">
+      <NavDropdown  title="Dropdown"style={{Color:"black",textDecorationLine:"none", }} id="nav-dropdown">
         <NavDropdown.Item eventKey="4.1" ></NavDropdown.Item>
         <NavDropdown.Item eventKey="4.2"></NavDropdown.Item>
         <NavDropdown.Item eventKey="4.3"></NavDropdown.Item>
@@ -36,12 +39,15 @@ export default function dash() {
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="">Available tests for registration</Nav.Link>
+    <Available />
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="">Previous Tests</Nav.Link>
+    <Previous />
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="">Cancelled Tests</Nav.Link>
+    <Canceled />
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="">Result</Nav.Link>
@@ -60,7 +66,7 @@ export default function dash() {
 
 <Navbar bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+   
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -70,7 +76,8 @@ export default function dash() {
       >
         
         <Nav.Link href="#" disabled>
-          Link
+        Test Type
+
         </Nav.Link>
       </Nav>
       <Form className="d-flex">
