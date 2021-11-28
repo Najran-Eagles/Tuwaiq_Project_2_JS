@@ -7,6 +7,7 @@ import Footer from './components/footer/footer';
 import Dashboard from './components/dashboard/dash';
 import SignIn from './components/signInUp/signIn';
 import SignUp from './components/signInUp/SignUp';
+import Available from './components/dashboard/available';
 // import Exam from'./components/exam/available'
 
 
@@ -22,6 +23,8 @@ return (
 			<Route path="/dash"element={<Dashboard/>}/>
       <Route path="/SignIn" element={<SignIn/>} />
       <Route path="/SignUp" element={<SignUp/>} />
+      <Route path="/dash/available" element={<Available/>} />
+      {/* <Route path="/dash/Canceled" element={<} */}
 		
 		</Routes>
 		

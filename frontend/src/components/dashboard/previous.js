@@ -22,7 +22,7 @@ const PreviousTests = () => {
         return (
           <Container>
             <Card>
-              <Card.Body>
+              <Card.Body id="card2">
                 <Card.Title>Name: {elem.name}</Card.Title>
                 <Card.Text>centerOffice: {elem.centerOffice}</Card.Text>
                 <Card.Text>attendanceStatus: {elem.attendanceStatus}</Card.Text>
