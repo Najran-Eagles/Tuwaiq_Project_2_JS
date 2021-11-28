@@ -17,6 +17,7 @@ app.use(cors());
 
 
 // app.use('/user',userRouter);
+app.use('/users',userRouter)
 app.use('/avialableTestForRegistration', avialableTestForRegistrationRouter );
 app.use('/cancelledTest', CancelledTestRouter);
 app.use('/previousTests', previousTestsRouter);
@@ -25,8 +26,12 @@ app.use('/previousTests', previousTestsRouter);
 
 
 
+
+
+
 app.use('/users',userRouter)
                       
+
 
 const PORT = process.env.PORT || 5000;
 
