@@ -28,8 +28,14 @@ app.use('/previousTests', previousTestsRouter);
 
 
 
+
+app.use('/users',userRouter)
+                      
+
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
 	console.log(`Server On ${PORT}`);
 });
+
