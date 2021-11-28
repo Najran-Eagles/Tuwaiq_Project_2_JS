@@ -20,12 +20,12 @@ axios
 });
 }, []);
     return (<div>
-            {/* {data.map((elem,i)=> {
+            {data.map((elem,i)=> {
                 return(
                     <Container>
                     <Card>
                     
-                    <Card.Body>
+                    <Card.Body id="card1">
                       <Card.Title>Name: {elem.name}</Card.Title>
                       <Card.Text>
                       center Office Location: {elem.centerOfficeLocation}
@@ -47,7 +47,7 @@ axios
                   </Card>
                   </Container>
                 )
-                 })}*/}
+                 })}
                  </div>
             )
           }
