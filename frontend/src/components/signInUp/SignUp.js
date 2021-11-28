@@ -11,13 +11,9 @@ function SignUp() {
   const [dateOfBirth, setDateOfBirth] = useState("");
 
   function handleSubmit(event) {
-    //  console.log(firstName, lastName, age, email, bloodGroup);
-
-    //Check if age < 18 then show message that must have age above 18
     event.preventDefault();
 
-    axios
-      .post("http://localhost:5000/users", {
+    axios.post("http://localhost:5000/users", {
         nationalId: nationalId,
       })
       .then(function (response) {

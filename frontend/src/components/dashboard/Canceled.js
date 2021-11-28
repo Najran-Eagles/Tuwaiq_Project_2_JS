@@ -20,7 +20,7 @@ axios
 });
 }, []);
     return (<div>
-            {/* {data.map((elem,i)=> {
+            {data.map((elem,i)=> {
                 return(
                     <Container>
                     <Card>
@@ -47,7 +47,7 @@ axios
                   </Card>
                   </Container>
                 )
-                 })}*/}
+                 })}
                  </div>
             )
           }

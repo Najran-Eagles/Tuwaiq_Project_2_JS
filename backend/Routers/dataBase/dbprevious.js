@@ -2,7 +2,7 @@ const previousTests=[
 
 
     {
-        id:1,
+        nationalId:'1234567899',
         name:"Standardized Test of English Proficiency",
         centerOffice:"Computer",
         attendanceStatus: "based",
@@ -14,7 +14,7 @@ const previousTests=[
 
 
     {
-        id:2,
+        nationalId:'1234567899',
         name:"Cognitive Ability Test – January 2020",
         centerOffice: " University City",
         testMechanisim:"Paper",
@@ -27,7 +27,7 @@ const previousTests=[
 
 
        {
-           id:3,
+        nationalId:'1234567899',
          name:"Teachers Genaral Test",
          centerOffice:"University City",
          testMechanisim:"Paper",
@@ -42,7 +42,7 @@ const previousTests=[
 
 
         {
-            id:4,
+            nationalId:'9876543211',
           name:"Teachers Genaral Test",
           centerOffice:"University City",
           testMechanisim:"Paper",

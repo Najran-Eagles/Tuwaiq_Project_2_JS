@@ -6,13 +6,14 @@ const getAllPreviousTests =(req,res)=>{
 };
 
 const getpreviousTests =(req,res)=>{
-
-
-    const foundpreviousTests = previousTests.filter((elem, i)=>{
-        return i == req.params.id
+    console.log('previous Tests');
+    console.log(req.params);
+    const foundpreviousTests = previousTests.filter(({nationalId})=>{
+        return nationalId ==  req.params.id
     })
+    console.log(foundpreviousTests);
     if(foundpreviousTests.length > 0){
-        res.send(foundpreviousTests[0])
+        res.send(foundpreviousTests)
         return
     }
     res.status(404).send("PreviousTests not found")
@@ -42,7 +43,7 @@ const updatePreviousTests =(req,res)=>{
         if(i == PreviousTests){
             elem.name =req.body.name;
             elem.centerOffice = req.body.centerOffice;
-            elem. attendanceStatus = req.body. attendanceStatus;
+            elem. attendanceStatus = req.body.attendanceStatus;
             elem.appointmentStatus = req.body.appointmentStatus;
             elem.testDate = req.body.testDate;
             elem.paymentMethod = req.body.paymentMethod;

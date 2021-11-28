@@ -22,7 +22,25 @@ const getUser = (req,res)=>{
     }
     res.status(404).send("user not found")
 }
+const checkUserLogin = (req, res) => {
+    console.log(req.body);
+    const u = req.body.nationalId;
+    const p = req.body.password;
+// const result = users.find(({nationalId, password}) => {
+//     nationalId === req.body.nationalId && password === req.body.password
+// })
 
+// console.log(u);
+// console.log(p)
+
+ const result = users.find( ({ nationalId, password }) => nationalId === u && password === p );
+console.log(result)
+
+if(result)
+    res.send(result);
+else
+    res.send("Invalid National id or password");
+}
 const addNewUser = (req,res)=>{
     const addedUser = {
         // name: req.body.name,
@@ -52,4 +70,4 @@ const updateUser = (req,res)=>{
     })
 }
 
-module.exports = {getAllUser,getUser,updateUser,addNewUser}
+module.exports = {getAllUser,getUser,updateUser,addNewUser, checkUserLogin}

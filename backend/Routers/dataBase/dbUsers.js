@@ -5,7 +5,7 @@ const users=[
     // email:'',
     nationalId:'1234567899',
     password:'321',
-    dateOfBirth: 27/11/1985,
+    dateOfBirth: '27/11/1985',
     isAdmin:false
 },
 {
@@ -14,7 +14,7 @@ const users=[
     // email:'',
     nationalId:'9876543211',
     password:'123',
-    dateOfBirth: 10/11/2020,
+    dateOfBirth: '10/11/2020',
     isAdmin:true
 }
 

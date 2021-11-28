@@ -3,11 +3,16 @@ import { Card, Container, Button } from "react-bootstrap";
 
 import axios from "axios";
 const PreviousTests = () => {
+  //  console.log('Session NationalId: '+sessionStorage.nationalId);
   const [data, setData] = useState([]);
+  const[nationalId, setNationalId] = useState();
   useEffect(() => {
+  setNationalId(sessionStorage.nationalId);
+
     console.log('Inside Previous Tests');
     axios
-      .get("http://localhost:5000/previousTests")
+      // .get(`http://localhost:5000/previousTests/${props.nationalId}`)
+      .get(`http://localhost:5000/previousTests/${nationalId}`)
       .then((resp) => {
         console.log(resp.data);
         setData(resp.data);
@@ -15,7 +20,7 @@ const PreviousTests = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [nationalId]);
   return (
     <div>
       {data.map((elem, i) => {
