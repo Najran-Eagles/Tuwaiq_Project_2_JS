@@ -23,16 +23,37 @@ axios
     return (<div>
             {data.map((elem,i)=> {
                 return(
-                    <Container>
-                    <Card>
-                    <Row>
-                      <Col>
-                    <Card.Body id="card">
-                      <Card.Title>Name: {elem.name}</Card.Title>
-                      <Card.Text>
-                      appointmentstatus: {elem.appointmentstatus}
-                      </Card.Text>
-                      <Card.Text>
+                    // <Container fluid="md">
+                    // {/* <Card> */}
+                    // {/* <Row> */}
+                      // {/* <Col> */}
+                    // {/* <Card.Body id="card"> */}
+                      // {/* <Card.Title>Name: {elem.name}</Card.Title> */}
+                      // {/* <Card.Text> */}
+                      // {/* appointmentstatus: {elem.appointmentstatus} */}
+                      // {/* </Card.Text> */}
+                      // {/* <Card.Text> */}
+                      // {/* testlanguage: {elem.testlanguage} */}
+                      // {/* </Card.Text> */}
+                      // {/* <Card.Text> */}
+                      // {/* testtypemechanism: {elem.testtypemechanism} */}
+                      // {/* </Card.Text> */}
+                      // {/* <Button variant="primary">Go somewhere</Button> */}
+                    // {/* </Card.Body> */}
+                    // {/* </Col> */}
+                    // {/* </Row> */}
+                  // {/* </Card> */}
+                  // {/* </Container> */}
+<Container fluid="md" id="availableCard">
+  <Row>
+    <Col>
+                  <Card>
+  <Card.Header as="h5">Name: {elem.name}</Card.Header>
+  <Card.Body>
+    <Card.Text>
+    appointmentstatus: {elem.appointmentstatus}
+    </Card.Text>
+    <Card.Text>
                       testlanguage: {elem.testlanguage}
                       </Card.Text>
                       <Card.Text>
@@ -40,11 +61,10 @@ axios
                       </Card.Text>
                       <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
-                    </Col>
-                    </Row>
-                  </Card>
-                  </Container>
-                )
+</Card>
+</Col>
+</Row>
+</Container>)
                  })}</div>
             )
           }

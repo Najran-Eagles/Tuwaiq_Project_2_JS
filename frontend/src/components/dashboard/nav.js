@@ -1,11 +1,12 @@
 import {Container, Nav,NavDropdown, Dropdown, Navbar , Button,Form,FormControl} from 'react-bootstrap';
-import {useNavigate, useLocation, Link, Outlet} from 'react-router-dom'
+import {useNavigate, useLocation, Link, Outlet} from 'react-router-dom';
+import './dashboard.css';
 
 export default function MyNav(){
     return (
         <div>
       
-	<Container>
+	<Container id="navStyling">
 	<Nav  id="nav3"   variant="tabs" defaultActiveKey="/">
   <Nav.Item>
     {/* <Link to="registered">Registered Tests</Link> */}
