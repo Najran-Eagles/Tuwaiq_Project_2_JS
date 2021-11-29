@@ -8,4 +8,4 @@ const {result}= require('../dataBase/dbresult')
  ResultRouter.post('/', addNewResult);
  ResultRouter.put('/:id', updateResult );
 
-module.exports ={ ResultRouter};
+module.exports ={ResultRouter};
