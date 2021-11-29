@@ -4,9 +4,12 @@ import { Card, Container, Button, Row, Col } from "react-bootstrap";
 import axios from "axios";
 const Canceled = () => {
   const [data, setData] = useState([]);
+  const [nationalId, setNationalId]= useState();
   useEffect(() => {
+    setNationalId(sessionStorage.nationalId);
+    console.log('inside canceled test');
     axios
-      .get("http://localhost:5000/cancelledTest/")
+      .get(`http://localhost:5000/CancelledTest/${nationalId}`)
       .then((resp) => {
         console.log(resp.data);
         setData(resp.data);
@@ -14,35 +17,12 @@ const Canceled = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [nationalId]);
   return (
     <div>
       {data.map((elem, i) => {
         return (
-          //   <Container>
-          //   <Card>
-
-          //   <Card.Body id="card1">
-          //     <Card.Title>Name: {elem.name}</Card.Title>
-          //     <Card.Text>
-          //     center Office Location: {elem.centerOfficeLocation}
-          //     </Card.Text>
-          //     <Card.Text>
-          //     Date: {elem.Date}
-          //     </Card.Text>
-          //     <Card.Text>
-          //     CancellationTime: {elem. CancellationTime}
-          //     </Card.Text>
-          //     <Card.Text>
-          //     testTypeMechanism: {elem.testTypeMechanism}
-          //     </Card.Text>
-          //     <Card.Text>
-          //     cancellationRreason: {elem.cancellationRreason}
-          //     </Card.Text>
-          //     <Button variant="primary">Go somewhere</Button>
-          //   </Card.Body>
-          // </Card>
-          // </Container>
+          
 
           <Container fluid="md" id="availableCard">
             <Row>
@@ -51,7 +31,7 @@ const Canceled = () => {
                   <Card.Header as="h5">Name: {elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
-                      center Office Location: {elem.centerOfficeLocation}
+                    centerOfficeLocation: {elem.centerOfficeLocation}
                     </Card.Text>
                     <Card.Text> Date: {elem.Date}</Card.Text>
                     <Card.Text>

@@ -7,13 +7,12 @@ const getAllCancelledTest =(req,res)=>{
 };
 
 const getCancelledTest =(req,res)=>{
-
-
-    const foundcancelledTest = cancelledTest.filter((elem, i)=>{
-        return i == req.params.id
+    const foundcancelledTest = cancelledTest.filter(({nationalId})=>{
+        return nationalId == req.params.id
     })
+    console.log(foundcancelledTest);
     if(foundcancelledTest.length > 0){
-        res.send(foundcancelledTest[0])
+        res.send(foundcancelledTest)
         return
     }
     res.status(404).send("CancelledTest not found")
@@ -33,7 +32,7 @@ const addNewCancelledTest = (req,res)=>{
 }
 cancelledTest.push(addecancelledTest)
 
-res.status(201).send(addedcancelledTest);
+res.status(201).send(addecancelledTest);
 
 }
 const updatecancelledTest =(req,res)=>{

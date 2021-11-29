@@ -1,5 +1,6 @@
 const cancelledTest = [
     {
+        nationalId:'1234567899',
         name:"Cognitive Ability Test – January 2020:",
         centerOfficeLocation:"University",
         Date :"29/05/1441 H-24/01/2020 Evening",
@@ -8,6 +9,7 @@ const cancelledTest = [
         cancellationRreason:"Payment Expired",
     },
     {
+        nationalId:'1234567899',
         name:"Teachers Genaral Test",
         centerOfficeLocation:"University",
         Date :"27/03/1441 H-24/11/2019 Evening",
@@ -16,6 +18,7 @@ const cancelledTest = [
         cancellationRreason:"Cancelled By Candidate",
     },
     {
+        nationalId:'9876543211',
         name:"Teachers Genaral Test",
         centerOfficeLocation:"University",
         Date :"02/04/1441 H-29/11/2019 Evening",
