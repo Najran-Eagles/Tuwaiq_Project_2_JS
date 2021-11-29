@@ -43,7 +43,6 @@ const Canceled = () => {
           //   </Card.Body>
           // </Card>
           // </Container>
-
           <Container fluid="md" id="availableCard">
             <Row>
               <Col>

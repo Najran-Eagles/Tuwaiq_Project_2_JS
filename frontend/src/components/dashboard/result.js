@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, setData } from "react";
+import axios from "axios";
 
 export default function Result()
 {
@@ -9,16 +10,16 @@ export default function Result()
     setNationalId(sessionStorage.nationalId);
   
       console.log('Inside Results');
-    //   axios
-    //     // .get(`http://localhost:5000/previousTests/${props.nationalId}`)
-    //     .get(`http://localhost:5000/previousTests/${nationalId}`)
-    //     .then((resp) => {
-    //       console.log(resp.data);
-    //       setData(resp.data);
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-    //     });
+      // axios
+        // .get(`http://localhost:5000/previousTests/${props.nationalId}`)
+        axios.get(`http://localhost:5000/previousTests/${nationalId}`)
+        .then((resp) => {
+          console.log(resp.data);
+          setData(resp.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
      }, [nationalId]);
     return (
         <div> 
