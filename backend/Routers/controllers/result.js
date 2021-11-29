@@ -6,8 +6,9 @@ const getAllResult =(req,res)=>{
 };
 
 const getResult =(req,res)=>{
-    console.log('result');
+    console.log('result in backend');
     console.log(req.params);
+    console.log(result);
     const foundresult = result.filter(({nationalId})=>{
         return nationalId ==  req.params.id
     })
@@ -23,7 +24,7 @@ const addNewResult = (req,res)=>{
     const addedResult ={
 
     name:req.body.name,
-    TestDate:req.body. TestDate,
+    TestDate:req.body.TestDate,
     TotalScore :req.body.TotalScore ,
     
 

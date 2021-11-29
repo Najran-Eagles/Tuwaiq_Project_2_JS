@@ -4,6 +4,7 @@ const { userRouter } = require('./routers/routes/userRouter');
 const {avialableTestForRegistrationRouter} = require("./routers/routes/availableRouter");
 const {CancelledTestRouter} = require('./routers/routes/cancelledTestRouter');
 const {previousTestsRouter} =  require('./routers/routes/previousRouter');
+const {ResultRouter} =  require('./routers/routes/resultRouter');
 const app = express();
 app.use(express.json());
 
@@ -21,13 +22,7 @@ app.use('/users',userRouter)
 app.use('/avialableTestForRegistration', avialableTestForRegistrationRouter );
 app.use('/cancelledTest', CancelledTestRouter);
 app.use('/previousTests', previousTestsRouter);
-
-
-
-
-
-
-
+app.use('/result', ResultRouter);
 
 app.use('/users',userRouter)
                       
@@ -39,4 +34,4 @@ app.listen(PORT, () => {
 	console.log(`Server On ${PORT}`);
 });
 
-console.log(global);
+// console.log(global);

@@ -6,6 +6,6 @@ const {previousTests}= require('../dataBase/dbprevious')
 previousTestsRouter.get("/", getAllPreviousTests);
 previousTestsRouter.get('/:id', getpreviousTests);
 previousTestsRouter.post('/', addNewPreviousTests);
-previousTestsRouter.put('/:id', updatePreviousTests );
+previousTestsRouter.put('/:id', updatePreviousTests);
 
 module.exports ={previousTestsRouter};
