@@ -39,3 +39,4 @@ app.listen(PORT, () => {
 	console.log(`Server On ${PORT}`);
 });
 
+console.log(global);
