@@ -1,6 +1,8 @@
-import React, { useEffect, useState, setData, data } from "react";
-import { Row, Col, Container, Button, Card } from "react-bootstrap";
+
+import React, { useEffect, useState, setData } from "react";
 import axios from "axios";
+
+
 export default function Result()
 {
   const[nationalId, setNationalId] = useState();
@@ -10,9 +12,11 @@ export default function Result()
     setNationalId(sessionStorage.nationalId);
   
       console.log('Inside Results');
-      
+
+      // axios
         // .get(`http://localhost:5000/previousTests/${props.nationalId}`)
-        axios.get(`http://localhost:5000/result/${nationalId}`)
+        axios.get(`http://localhost:5000/previousTests/${nationalId}`)
+
         .then((resp) => {
           console.log(resp.data);
           setData(resp.data);
