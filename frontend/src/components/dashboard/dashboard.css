@@ -70,3 +70,10 @@
     justify-content: right;
     border: solid;
 }
+#AvaCdBtn{
+    width: 100%;
+    margin-bottom: 0%;
+}
+#nav1Contain{
+    background-color: gainsboro;
+}
