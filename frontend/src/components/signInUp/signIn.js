@@ -50,7 +50,7 @@ console.log(err);
     <div className="signIn">
       <Container>
         <Row>
-          <Col>
+          <Col id="card">
             <Form onSubmit= {handleSubmit}>
               <Card.Header id="signinList">
                 Login With A Qiyas Account
@@ -85,9 +85,9 @@ console.log(err);
               </Link>
             </Form>
           </Col>
-          <Col>
-            <Card>
-              <Card.Header id="cardList1">demo Show</Card.Header>
+          <Col id="card1">
+            <Card id="box">
+              <Card.Header id="cardList1">Demo Show</Card.Header>
               <Card.Body>
                 <Card.Title id="cardList2">
                   Learn more about how to open a new account, sign up for a
