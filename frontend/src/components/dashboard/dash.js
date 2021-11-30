@@ -22,6 +22,7 @@ import { useNavigate, useLocation, Link, Outlet } from "react-router-dom";
 export default function Dash() {
   const [nationalId, setNationalId] = useState("");
   console.log("inside dashboard");
+  
   // const {state} = useLocation();
   // console.log(state.nationalId);
   // if(state)
@@ -35,38 +36,26 @@ export default function Dash() {
   return (
     <div>
       <Container>
-        {/* <Header/> */}
-        
-      </Container>
+        <Nav variant="pills" activeKey="1">
+          <Nav.Item>
+            <Nav.Link eventKey="1" href="#/home">
+              NavLink 1 content
+            </Nav.Link>
+          </Nav.Item>
 
-      <Container>
-        <Navbar bg="light" expand="lg">
-          <Container fluid>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px" }}
-                navbarScroll
-              >
-                <Nav.Link href="#" disabled>
-                  Test Type
-                </Nav.Link>
-              </Nav>
-              <Form className="d-flex">
-                <FormControl
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+          <NavDropdown title="Dropdown" id="nav-dropdown">
+            <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+            <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+            <NavDropdown.Item eventKey="4.3">
+              Something else here
+            </NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
         <MyNav></MyNav>
       </Container>
     </div>
   );
 }
+// render(<Dash />);

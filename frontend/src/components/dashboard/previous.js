@@ -3,7 +3,7 @@ import { Card, Container, Button, Row, Col } from "react-bootstrap";
 
 import axios from "axios";
 const PreviousTests = () => {
-  //  console.log('Session NationalId: '+sessionStorage.nationalId);
+  
   const [data, setData] = useState([]);
   const[nationalId, setNationalId] = useState();
   useEffect(() => {
@@ -11,7 +11,7 @@ const PreviousTests = () => {
 
     console.log('Inside Previous Tests');
     axios
-      // .get(`http://localhost:5000/previousTests/${props.nationalId}`)
+     
       .get(`http://localhost:5000/previousTests/${nationalId}`)
       .then((resp) => {
         console.log(resp.data);
@@ -34,7 +34,7 @@ const PreviousTests = () => {
                     <Card.Text>
                     centerOffice: {elem.centerOffice}
                     </Card.Text>
-                    <Card.Text> Date: {elem.Date}</Card.Text>
+
                     <Card.Text>
                     attendanceStatus: {elem.attendanceStatus}
                     </Card.Text>

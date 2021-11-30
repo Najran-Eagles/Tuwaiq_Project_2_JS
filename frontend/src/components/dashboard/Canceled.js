@@ -8,6 +8,7 @@ const Canceled = () => {
   useEffect(() => {
     setNationalId(sessionStorage.nationalId);
     console.log('inside canceled test');
+    
     axios
       .get(`http://localhost:5000/CancelledTest/${nationalId}`)
       .then((resp) => {
@@ -43,7 +44,7 @@ const Canceled = () => {
                     <Card.Text>
                     cancellationRreason: {elem.cancellationRreason}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">More details</Button>
                   </Card.Body>
                 </Card>
               </Col>
