@@ -23,7 +23,6 @@ const Canceled = () => {
     <div>
       {data.map((elem, i) => {
         return (
-          
 
           <Container fluid="md" id="availableCard">
             <Row>
