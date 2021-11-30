@@ -28,22 +28,22 @@ const Canceled = () => {
             <Row>
               <Col>
                 <Card>
-                  <Card.Header as="h5">Name: {elem.name}</Card.Header>
+                  <Card.Header as="h5">{elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
-                    centerOfficeLocation: {elem.centerOfficeLocation}
+                    <b>Center Office Location:</b> {elem.centerOfficeLocation}
                     </Card.Text>
-                    <Card.Text> Date: {elem.Date}</Card.Text>
+                    <Card.Text> <b>Date:</b> {elem.Date}</Card.Text>
                     <Card.Text>
-                    CancellationTime: {elem.CancellationTime}
-                    </Card.Text>
-                    <Card.Text>
-                    testTypeMechanism: {elem.testTypeMechanism}
+                   <b>Cancellation Time:</b>  {elem.CancellationTime}
                     </Card.Text>
                     <Card.Text>
-                    cancellationRreason: {elem.cancellationRreason}
+                   <b> Test Type Mechanism:</b> {elem.testTypeMechanism}
                     </Card.Text>
-                    <Button variant="primary">More details</Button>
+                    <Card.Text>
+                   <b>Cancellation Rreason:</b>  {elem.cancellationRreason}
+                    </Card.Text>
+                    {/* <Button variant="primary">More details</Button> */}
                   </Card.Body>
                 </Card>
               </Col>

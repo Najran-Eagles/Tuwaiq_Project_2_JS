@@ -1,8 +1,4 @@
-import {
-  Container,
-  Nav,
-}
-from "react-bootstrap";
+import {Container, Nav} from "react-bootstrap";
 import { useNavigate, useLocation, Link, Outlet } from "react-router-dom";
 import "./dashboard.css";
 
