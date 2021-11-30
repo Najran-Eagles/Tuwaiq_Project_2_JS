@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState, setData } from "react";
+import { Row, Col, Container, Button, Card } from "react-bootstrap";
 import axios from "axios";
 
 
@@ -16,10 +17,6 @@ export default function Result()
       
        
         axios.get(`http://localhost:5000/result/${nationalId}`)
-
-
-    
-        axios.get(`http://localhost:5000/previousTests/${nationalId}`)
 
 
         .then((resp) => {

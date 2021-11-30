@@ -22,7 +22,7 @@ import { useNavigate, useLocation, Link, Outlet } from "react-router-dom";
 export default function Dash() {
   const [nationalId, setNationalId] = useState("");
   console.log("inside dashboard");
-  
+
   // const {state} = useLocation();
   // console.log(state.nationalId);
   // if(state)
@@ -36,23 +36,30 @@ export default function Dash() {
   return (
     <div>
       <Container>
-        <Nav variant="pills" activeKey="1">
-          <Nav.Item>
-            <Nav.Link eventKey="1" href="#/home">
-              NavLink 1 content
-            </Nav.Link>
-          </Nav.Item>
-
-          <NavDropdown title="Dropdown" id="nav-dropdown">
-            <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-            <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item eventKey="4.3">
-              Something else here
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
+        <div
+          variant="pills"
+          activeKey="1"
+          sx={{ display: "grid", gridTemplateColumns: "50% 50%" }}
+        >
+          <div>
+            <Nav.Item>
+              <Nav.Link eventKey="1" href="#/home">
+                NavLink 1 content
+              </Nav.Link>
+            </Nav.Item>
+          </div>
+          <div>
+            <NavDropdown title="Dropdown">
+              <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.3">
+                Something else here
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+            </NavDropdown>
+          </div>
+        </div>
         <MyNav></MyNav>
       </Container>
     </div>

@@ -5,7 +5,7 @@ import "./header.css";
 import { Outlet } from "react-router-dom";
 import SignIn from "../signInUp/signIn";
 
-export default function head() {
+export default function head(props) {
   return (
     <div>
       <Container>
@@ -24,7 +24,7 @@ export default function head() {
           </Col>
         </Row>
       </Container>
-	  <SignIn />
+	  <SignIn setName={props.setName} />
     </div>
   );
 }

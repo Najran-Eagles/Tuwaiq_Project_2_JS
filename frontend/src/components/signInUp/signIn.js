@@ -9,7 +9,7 @@ import { Card, Container, Row, Col, Alert } from "react-bootstrap";
 
 
 
-export default function SignIn() {
+export default function SignIn(props) {
 
   const [nationalId, setNationalId] = useState("");
   const [password, setPassword] = useState("");
@@ -31,7 +31,7 @@ export default function SignIn() {
     if(res.data && res.data != "Invalid National id or password"){
       console.log('NationalId:', res.data.nationalId);
       sessionStorage.setItem('nationalId', res.data.nationalId);
-
+      props.setName('Signed in as: '+res.data.nationalId);
       navigate('/dash' ); //{ state: { nationalId: res.data.nationalId}});
 
     }else{

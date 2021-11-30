@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useState} from "react";
 
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/navigation/nav";
@@ -15,11 +15,12 @@ import Result from "./components/dashboard/result";
 // import Exam from'./components/exam/available'
 
 const App = () => {
+  const [name, setName] = useState();
   return (
     <div className="App">
-      <Navigation />
+      <Navigation name={name} setName={setName} />
       <Routes>
-        <Route path="/" element={<Header />}/>
+        <Route path="/" element={<Header setName={setName} />}/>
         <Route path="dash" element={<Dashboard />} >
           <Route path="previous" element={<Previous />}/>
           <Route path="result" element={<Result />} />
