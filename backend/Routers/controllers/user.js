@@ -9,7 +9,7 @@ const getAllUser = (req,res)=>{
 const getUser = (req,res)=>{
     console.log(typeof users)
     const foundUser = users.filter((elem, i) =>{
-        return i == req.params.id 
+        return i == req.params.id
     })
 
     /* .find => element || undefined

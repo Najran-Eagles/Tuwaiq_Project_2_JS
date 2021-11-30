@@ -25,7 +25,7 @@ const Available = () => {
             <Row>
               <Col>
                 <Card>
-                  <Card.Header as="h5">Name: {elem.name}</Card.Header>
+                  <Card.Header as="h5" >Name: {elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
                       appointmentstatus: {elem.appointmentstatus}
@@ -34,7 +34,7 @@ const Available = () => {
                     <Card.Text>
                       testtypemechanism: {elem.testtypemechanism}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">More details</Button>
                   </Card.Body>
                 </Card>
               </Col>

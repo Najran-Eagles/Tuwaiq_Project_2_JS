@@ -13,9 +13,14 @@ export default function Result()
   
       console.log('Inside Results');
 
-      // axios
-        // .get(`http://localhost:5000/previousTests/${props.nationalId}`)
+      
+       
+        axios.get(`http://localhost:5000/result/${nationalId}`)
+
+
+    
         axios.get(`http://localhost:5000/previousTests/${nationalId}`)
+
 
         .then((resp) => {
           console.log(resp.data);
@@ -42,7 +47,7 @@ export default function Result()
                     <Card.Text>
                     TotalScore: {elem.TotalScore}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">More details</Button>
                   </Card.Body>
                 </Card>
               </Col>

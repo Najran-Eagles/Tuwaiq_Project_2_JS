@@ -1,12 +1,14 @@
 const{cancelledTest} =require("../dataBase/dbCanceledTest");
 
 const getAllCancelledTest =(req,res)=>{
-    // console.log('Cancelled Test')
+     console.log('Cancelled Test')
     // console.log(cancelledTest);
     res.send(cancelledTest);
 };
 
 const getCancelledTest =(req,res)=>{
+    console.log("Inside Cancelled Test")
+    console.log(req.params.id);
     const foundcancelledTest = cancelledTest.filter(({nationalId})=>{
         return nationalId == req.params.id
     })
