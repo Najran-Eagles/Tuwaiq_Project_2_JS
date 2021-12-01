@@ -4,11 +4,11 @@ import { Card, Container, Button, Row, Col } from "react-bootstrap";
 import axios from "axios";
 const Canceled = () => {
   const [data, setData] = useState([]);
-  const [nationalId, setNationalId]= useState();
+  const [nationalId, setNationalId] = useState();
   useEffect(() => {
     setNationalId(sessionStorage.nationalId);
-    console.log('inside canceled test');
     
+
     axios
       .get(`http://localhost:5000/CancelledTest/${nationalId}`)
       .then((resp) => {
@@ -23,27 +23,28 @@ const Canceled = () => {
     <div>
       {data.map((elem, i) => {
         return (
-
           <Container fluid="md" id="availableCard">
             <Row>
               <Col>
                 <Card>
-                  <Card.Header as="h5">Name: {elem.name}</Card.Header>
+                  <Card.Header as="h5">{elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
-                    centerOfficeLocation: {elem.centerOfficeLocation}
-                    </Card.Text>
-                    <Card.Text> Date: {elem.Date}</Card.Text>
-                    <Card.Text>
-                    CancellationTime: {elem.CancellationTime}
+                      <b>Center Office Location:</b> {elem.centerOfficeLocation}
                     </Card.Text>
                     <Card.Text>
-                    testTypeMechanism: {elem.testTypeMechanism}
+                      {" "}
+                      <b>Date:</b> {elem.Date}
                     </Card.Text>
                     <Card.Text>
-                    cancellationRreason: {elem.cancellationRreason}
+                      <b>Cancellation Time:</b> {elem.CancellationTime}
                     </Card.Text>
-                    <Button variant="primary">More details</Button>
+                    <Card.Text>
+                      <b> Test Type Mechanism:</b> {elem.testTypeMechanism}
+                    </Card.Text>
+                    <Card.Text>
+                      <b>Cancellation Rreason:</b> {elem.cancellationRreason}
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

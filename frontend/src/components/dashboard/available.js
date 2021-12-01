@@ -24,17 +24,20 @@ const Available = () => {
           <Container fluid="md" id="availableCard">
             <Row>
               <Col>
-                <Card>
-                  <Card.Header as="h5" > {elem.name}</Card.Header>
+
+                
+
+                <Card style={{height: "250px", margin: "20px 0px 20px 0px", width: "400px"}}>
+                  <Card.Header as="h5" >{elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
-                      appointmentstatus: {elem.appointmentstatus}
+                     <b> Appointment Status:</b> {elem.appointmentstatus}
                     </Card.Text>
-                    <Card.Text>testlanguage: {elem.testlanguage}</Card.Text>
+                    <Card.Text><b>Test Language:</b> {elem.testlanguage}</Card.Text>
                     <Card.Text>
-                      testtypemechanism: {elem.testtypemechanism}
+                     <b> Test type mechanism:</b> {elem.testtypemechanism}
                     </Card.Text>
-                    <Button variant="primary">More details</Button>
+                    <Button id="AvaCdBtn" variant="primary" disabled>Registration</Button>
                   </Card.Body>
                 </Card>
               </Col>

@@ -2,7 +2,7 @@
 #nafbar{
 
     background-image:  url("../img/img1.PNG");
-    padding: 40px;
+    padding: 30px;
 
 
 }
@@ -17,4 +17,4 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 50%;
-  }
+

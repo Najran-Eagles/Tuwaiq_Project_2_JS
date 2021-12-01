@@ -29,25 +29,25 @@ const PreviousTests = () => {
             <Row>
               <Col>
                 <Card>
-                  <Card.Header as="h5">Name: {elem.name}</Card.Header>
+                  <Card.Header as="h5">{elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
-                    centerOffice: {elem.centerOffice}
+                    <b>Center Office:</b> {elem.centerOffice}
                     </Card.Text>
 
                     <Card.Text>
-                    attendanceStatus: {elem.attendanceStatus}
+                    <b>Attendance Status:</b> {elem.attendanceStatus}
                     </Card.Text>
                     <Card.Text>
-                    appointmentStatus: {elem.appointmentStatus}
+                    <b>Appointment Status:</b> {elem.appointmentStatus}
                     </Card.Text>
                     <Card.Text>
-                    testDate: {elem.testDate}
+                     <b>Test Date:</b>{elem.testDate}
                     </Card.Text>
                     <Card.Text>
-                    paymentMethod: {elem.paymentMethod}
+                    <b>Payment Method:</b> {elem.paymentMethod}
                     </Card.Text> 
-                    <Button variant="primary">More details</Button>
+                    {/* <Button variant="primary">More details</Button> */}
                   </Card.Body>
                 </Card>
               </Col>
