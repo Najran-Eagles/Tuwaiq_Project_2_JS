@@ -12,7 +12,7 @@ export default function Result()
   useEffect(() => {
     setNationalId(sessionStorage.nationalId);
   
-      console.log('Inside Results');
+      
 
       
        
@@ -35,7 +35,7 @@ export default function Result()
           <Container fluid="md" id="availableCard">
             <Row>
               <Col>
-                <Card>
+                <Card style={{height: "250px", margin: "20px 0px 20px 0px", width: "400px"}}>
                   <Card.Header as="h5">{elem.name}</Card.Header>
                   <Card.Body>
                   <Card.Text>
