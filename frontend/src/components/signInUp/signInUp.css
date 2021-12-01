@@ -39,16 +39,19 @@
     /* border-radius: 5px; */
     border: 1px solid rgb(224, 222, 222);
     /* border-radius: 5px; */
+   
     
     
   }
-  /* #card{
-   
-    border: solid;
+  #card{
+    border:solid ;
+    border-radius: 20px;
   }
   #card1{
-   
-  } */
+    border: solid;
+    border-radius: 20px;
+  }
+ 
   
   #btn {
     width: 100px;
@@ -61,7 +64,7 @@
   
   }
   #btn2 {
-    color: rgb(121, 121, 77);
+    color: beige;
     width: 150px;
     height: 30px;
     margin: 10px;
@@ -78,7 +81,9 @@
   }
   
   
-  
+  #cardList2{
+    font-size: small;
+  }
   
   
   

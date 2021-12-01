@@ -57,7 +57,7 @@ console.log(err);
               </Card.Header>
               <Alert variant="danger" style={{display: display}}>User not found!</Alert>
               <Form.Group size="lg" controlId="text">
-                <Form.Label>NationalId*</Form.Label>
+                <Form.Label>National ID*</Form.Label>
                 <Form.Control
                   autoFocus
                   type="text"

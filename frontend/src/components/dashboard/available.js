@@ -25,7 +25,7 @@ const Available = () => {
             <Row>
               <Col>
                 <Card>
-                  <Card.Header as="h5" >Name: {elem.name}</Card.Header>
+                  <Card.Header as="h5" > {elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
                       appointmentstatus: {elem.appointmentstatus}

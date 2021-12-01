@@ -37,7 +37,10 @@ export default function MyNav(props) {
 
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-start"> 
-    <Button onClick={click}>Log out</Button>
+    <Button id="btnLogOut" onClick={click}>Log out</Button>
+    {/* <Button onClick={click} variant="light" size="lg" >
+    Log out
+  </Button>{' '} */}
     &nbsp;
 
       <Navbar.Text>

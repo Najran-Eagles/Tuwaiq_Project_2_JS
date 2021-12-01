@@ -8,6 +8,8 @@ import {
   Button,
   Form,
   FormControl,
+  Row,
+  Col,
 } from "react-bootstrap";
 import MyNav from "./nav";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,33 +37,37 @@ export default function Dash() {
   // }, [state])
   return (
     <div>
-      <Container>
-        <div
+      <Container id="nav1Contain">
+        {/* <div
           variant="pills"
           activeKey="1"
           sx={{ display: "grid", gridTemplateColumns: "50% 50%" }}
-        >
-          <div>
+        > */}
+        <Row>
+          <Col>
+          
             <Nav.Item>
               <Nav.Link eventKey="1" href="#/home">
-                NavLink 1 content
+                Home page
               </Nav.Link>
             </Nav.Item>
-          </div>
-          <div>
-            <NavDropdown title="Dropdown">
-              <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.3">
+          </Col>
+          <Col>
+            <NavDropdown title="E-Services" style={{ float: "right"}}>
+              <NavDropdown.Item eventKey="4.1">Check Test</NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.2">Our policy</NavDropdown.Item>
+              {/* <NavDropdown.Item eventKey="4.3">
                 Something else here
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+              <NavDropdown.Divider /> */}
+              <NavDropdown.Item eventKey="4.4">Complains</NavDropdown.Item>
             </NavDropdown>
-          </div>
-        </div>
-        <MyNav></MyNav>
+         
+        {/* </div> */}
+        </Col>
+        </Row>
       </Container>
+      <MyNav></MyNav>
     </div>
   );
 }

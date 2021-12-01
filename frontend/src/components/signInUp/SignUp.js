@@ -63,7 +63,7 @@ function SignUp() {
               Register
               </Button>
               <Link to="/">
-          <Button id="btn2" type="submit" variant="secondary"  active>
+          <Button id="btn2" type="submit" variant="primary"  active>
              Back to log in
           </Button>
           </Link>
