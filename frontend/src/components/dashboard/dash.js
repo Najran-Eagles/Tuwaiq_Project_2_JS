@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Container, Nav, NavDropdown, Row, Col } from "react-bootstrap";
+
+import {
+  Container,
+  Nav,
+  NavDropdown,
+  Dropdown,
+  Navbar,
+  Button,
+  Form,
+  FormControl,
+  Row,
+  Col,
+} from "react-bootstrap";
+
 import MyNav from "./nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./dashboard.css";
@@ -11,6 +24,8 @@ export default function Dash() {
   return (
     <div>
       <Container id="nav1Contain">
+         
+
         <Row>
           <Col>
             <Nav.Item>
@@ -20,6 +35,7 @@ export default function Dash() {
             </Nav.Item>
           </Col>
           <Col>
+
             <NavDropdown title="E-Services" style={{ float: "right" }}>
               <NavDropdown.Item eventKey="4.1">Check Tests</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.2">Our policy</NavDropdown.Item>

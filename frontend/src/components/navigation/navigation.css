@@ -6,6 +6,7 @@
 
 
 }
+
 #btnLogOut{
     background-color: #e7e7e7;
     border: none;
@@ -16,4 +17,4 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 50%;
-  }
+

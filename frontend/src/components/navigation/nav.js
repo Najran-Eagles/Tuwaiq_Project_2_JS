@@ -13,6 +13,9 @@ export default function MyNav(props) {
   }
   return (
     <div>
+
+
+
       <Navbar id="nafbar">
         <Container>
           <Navbar.Toggle />
@@ -27,6 +30,7 @@ export default function MyNav(props) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
     </div>
   );
 }
