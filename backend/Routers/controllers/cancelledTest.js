@@ -2,7 +2,7 @@ const{cancelledTest} =require("../dataBase/dbCanceledTest");
 
 const getAllCancelledTest =(req,res)=>{
      console.log('Cancelled Test')
-    // console.log(cancelledTest);
+ 
     res.send(cancelledTest);
 };
 

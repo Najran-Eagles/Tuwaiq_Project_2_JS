@@ -34,33 +34,3 @@ const avialableTestForRegistration = [
 
 module.exports = { avialableTestForRegistration };
 
-// const signIn = [
-//     {
-//         name:"ahad",
-//         id:100200300,
-//         password:"AAHH",
-
-//     },
-//     {
-//         id:400500600,
-//         password:"AARR",
-
-//     },
-
-//     {
-//         id:700800,
-//         password:"ARAH",
-
-//     },
-
-// ]
-
-// const signUp =[
-
-//     {
-
-//     }
-
-// ]
-
-// module.exports = {user}
