@@ -1,11 +1,5 @@
 const avialableTestForRegistration = [
-  {
-    id: 1,
-    name: "Reformer competency test",
-    appointmentstatus: "Early Registration",
-    testlanguage: "Arabic",
-    testtypemechanism: "Computer based",
-  },
+
 
   {
     id: 2,
@@ -26,6 +20,13 @@ const avialableTestForRegistration = [
   {
     id: 4,
     name: "General Aptitude Test for University Graduates",
+    appointmentstatus: "Early Registration",
+    testlanguage: "Arabic",
+    testtypemechanism: "Computer based",
+  },
+  {
+    id: 1,
+    name: "Reformer competency test",
     appointmentstatus: "Early Registration",
     testlanguage: "Arabic",
     testtypemechanism: "Computer based",

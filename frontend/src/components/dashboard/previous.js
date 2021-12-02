@@ -22,6 +22,7 @@ const PreviousTests = () => {
       });
   }, [nationalId]);
   return (
+    <Container>
     <div>
       {data.map((elem, i) => {
         return (
@@ -56,6 +57,7 @@ const PreviousTests = () => {
         );
       })}
     </div>
+    </Container>
   );
 };
 export default PreviousTests;

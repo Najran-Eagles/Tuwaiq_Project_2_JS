@@ -17,6 +17,7 @@ const Available = () => {
       });
   }, []);
   return (
+    <Container>
     <div>
       {data.map((elem, i) => {
         return (
@@ -24,10 +25,7 @@ const Available = () => {
           <Container fluid="md" id="availableCard">
             <Row>
               <Col>
-
-                
-
-                <Card style={{height: "250px", margin: "20px 0px 20px 0px", width: "400px"}}>
+                <Card style={{height: "250px", margin: "20px 0px 20px 0px", width: "350px"}}>
                   <Card.Header as="h5" >{elem.name}</Card.Header>
                   <Card.Body>
                     <Card.Text>
@@ -46,6 +44,7 @@ const Available = () => {
         );
       })}
     </div>
+    </Container>
   );
 };
 export default Available;
