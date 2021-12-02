@@ -20,6 +20,7 @@ const Canceled = () => {
       });
   }, [nationalId]);
   return (
+    <Container>
     <div>
       {data.map((elem, i) => {
         return (
@@ -53,6 +54,7 @@ const Canceled = () => {
         );
       })}
     </div>
+    </Container>
   );
 };
 export default Canceled;

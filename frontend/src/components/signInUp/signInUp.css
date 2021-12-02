@@ -9,18 +9,16 @@
     padding: 300px;
     display: inline;
   }
-  #form {
-    border: 1px solid rgb(224, 222, 222);
 
-    /* border-radius: 5px; */
-   
-    
-    
+  #form {
+    border: 1px solid rgb(224, 222, 222);    
   }
+
   #card{
     border:solid ;
     border-radius: 20px;
   }
+
   #card1{
     border: solid;
     border-radius: 20px;
@@ -33,10 +31,9 @@
     margin: 15px;
     font-family: Georgia, “Times New Roman”, Times, serif;
     align-items: center;
-    font-size: 15px;
-    
-  
+    font-size: 15px;  
   }
+
   #btn2 {
     color: beige;
     width: 150px;
@@ -44,24 +41,23 @@
     margin: 10px;
     font-size: 15px;
     color: aliceblue;
-    font-family: Georgia, “Times New Roman”, Times, serif;
-    
+    font-family: Georgia, “Times New Roman”, Times, serif; 
   }
+
   #btn3 {
     width: 150px;
     height: 30px;
     text-align: center;
-    
   }
   
   
-  #cardList2{
+  #cardList3{
     font-size: small;
   }
   
   
   
-  
+  #form{
 
     width: 500px;
     size: 200px;
@@ -85,6 +81,7 @@
 }
 #card1 {
   border-radius: 20px;
+  
 }
 #btn {
   width: 100px;
