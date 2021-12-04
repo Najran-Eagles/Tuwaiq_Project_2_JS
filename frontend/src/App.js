@@ -25,7 +25,6 @@ const App = () => {
           <Route path="cancelled" element={<Canceled />} />
           <Route path="available" element={<Available />} />
         </Route>
-
         <Route path="/SignUp" element={<SignUp />} />
       </Routes>
 

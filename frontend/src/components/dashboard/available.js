@@ -18,6 +18,7 @@ const Available = () => {
   }, []);
   return (
     <Container>
+
       <div>
         {data.map((elem, i) => {
           return (
@@ -47,6 +48,8 @@ const Available = () => {
           );
         })}
       </div>
+
+   
     </Container>
   );
 };
