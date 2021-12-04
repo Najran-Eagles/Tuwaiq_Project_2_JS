@@ -34,7 +34,6 @@ const Canceled = () => {
                       <b>Center Office Location:</b> {elem.centerOfficeLocation}
                     </Card.Text>
                     <Card.Text>
-                      {" "}
                       <b>Date:</b> {elem.Date}
                     </Card.Text>
                     <Card.Text>
