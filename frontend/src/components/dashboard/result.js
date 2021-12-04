@@ -28,6 +28,7 @@ export default function Result()
         });
      }, [nationalId]);
     return (
+      <Container>
       <div>
       {data.map((elem, i) => {
         return (
@@ -35,7 +36,7 @@ export default function Result()
           <Container fluid="md" id="availableCard">
             <Row>
               <Col>
-                <Card style={{height: "250px", margin: "20px 0px 20px 0px", width: "400px"}}>
+                <Card>
                   <Card.Header as="h5">{elem.name}</Card.Header>
                   <Card.Body>
                   <Card.Text>
@@ -53,5 +54,6 @@ export default function Result()
         );
       })}
     </div>
+    </Container>
     )
 }

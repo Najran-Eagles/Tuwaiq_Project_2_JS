@@ -57,9 +57,14 @@
 #availableCard{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 30%;
     height: 100%;
     float: left;
+    height: 250px;
+    margin: 20px 10px 20px 10px;
+    width: 400px;
+  
 }
 
 #nav3{
@@ -80,4 +85,19 @@
 
 #nav1Contain{
     background-color: gainsboro;
+    margin-top: 20px;
+}
+#e-services{
+    float: right;
+}
+
+
+
+.availableCard1{
+    height: 250px;
+    width: 400px;
+}
+
+#navBody{
+    margin-top: 20px;
 }

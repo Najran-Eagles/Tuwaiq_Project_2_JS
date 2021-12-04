@@ -1,8 +1,9 @@
 
 #nafbar{
 
-    background-image:  url("../img/img1.PNG");
+    background-image:  url("../img/navImg.PNG");
     padding: 30px;
+    
 
 
 }
@@ -11,10 +12,12 @@
     background-color: #e7e7e7;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 10px;
     border-radius: 50%;
+    
 
+}

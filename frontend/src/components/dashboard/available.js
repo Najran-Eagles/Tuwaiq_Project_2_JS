@@ -17,35 +17,37 @@ const Available = () => {
       });
   }, []);
   return (
-    <div>
-      {data.map((elem, i) => {
-        return (
-          
-          <Container fluid="md" id="availableCard">
-            <Row>
-              <Col>
-
-                
-
-                <Card style={{height: "250px", margin: "20px 0px 20px 0px", width: "400px"}}>
-                  <Card.Header as="h5" >{elem.name}</Card.Header>
-                  <Card.Body>
-                    <Card.Text>
-                     <b> Appointment Status:</b> {elem.appointmentstatus}
-                    </Card.Text>
-                    <Card.Text><b>Test Language:</b> {elem.testlanguage}</Card.Text>
-                    <Card.Text>
-                     <b> Test type mechanism:</b> {elem.testtypemechanism}
-                    </Card.Text>
-                    <Button id="AvaCdBtn" variant="primary" disabled>Registration</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        );
-      })}
-    </div>
+    <Container>
+      <div>
+        {data.map((elem, i) => {
+          return (
+            <Container fluid="md" id="availableCard">
+              <Row>
+                <Col>
+                  <Card className="availableCard1">
+                    <Card.Header as="h5">{elem.name}</Card.Header>
+                    <Card.Body>
+                      <Card.Text>
+                        <b> Appointment Status:</b> {elem.appointmentstatus}
+                      </Card.Text>
+                      <Card.Text>
+                        <b>Test Language:</b> {elem.testlanguage}
+                      </Card.Text>
+                      <Card.Text>
+                        <b> Test type mechanism:</b> {elem.testtypemechanism}
+                      </Card.Text>
+                      <Button id="AvaCdBtn" variant="primary" disabled>
+                        Registration
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          );
+        })}
+      </div>
+    </Container>
   );
 };
 export default Available;

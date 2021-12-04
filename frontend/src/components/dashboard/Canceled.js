@@ -20,6 +20,7 @@ const Canceled = () => {
       });
   }, [nationalId]);
   return (
+    <Container>
     <div>
       {data.map((elem, i) => {
         return (
@@ -33,7 +34,6 @@ const Canceled = () => {
                       <b>Center Office Location:</b> {elem.centerOfficeLocation}
                     </Card.Text>
                     <Card.Text>
-                      {" "}
                       <b>Date:</b> {elem.Date}
                     </Card.Text>
                     <Card.Text>
@@ -53,6 +53,7 @@ const Canceled = () => {
         );
       })}
     </div>
+    </Container>
   );
 };
 export default Canceled;

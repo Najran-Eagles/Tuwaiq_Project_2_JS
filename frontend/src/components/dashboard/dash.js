@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { IoHome } from "react-icons/io5";
 import {
   Container,
   Nav,
@@ -29,14 +29,15 @@ export default function Dash() {
         <Row>
           <Col>
             <Nav.Item>
-              <Nav.Link eventKey="1" href="#/home">
+              <Nav.Link eventKey="1" >
+                <IoHome />
                 Home page
               </Nav.Link>
             </Nav.Item>
           </Col>
           <Col>
 
-            <NavDropdown title="E-Services" style={{ float: "right" }}>
+            <NavDropdown title="E-Services" id="e-services">
               <NavDropdown.Item eventKey="4.1">Check Tests</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.2">Our policy</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.4">Complains</NavDropdown.Item>
