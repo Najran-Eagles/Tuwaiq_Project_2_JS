@@ -4,29 +4,27 @@ import "./dashboard.css";
 
 export default function MyNav() {
   return (
+    <Container id="navBody">
     <div>
 
-<Container  id="navStyling">
-<Nav variant="tabs" defaultActiveKey="/">
+    <Nav variant="tabs" defaultActiveKey="/">
   <Nav.Item>
-    <Nav.Link><Link to="/dash/available">Available tests for registration</Link></Nav.Link>
-  </Nav.Item>
-  &nbsp;&nbsp;
-  <Nav.Item>
-    <Nav.Link><Link to="/dash/previous">Previous Tests</Link></Nav.Link>
-  </Nav.Item>
-  &nbsp;&nbsp;
-  <Nav.Item>
-  <Nav.Item>
-    <Nav.Link> <Link to="/dash/cancelled">Cancelled Tests</Link></Nav.Link>
-  </Nav.Item>
+  <Nav.Link><Link to="/dash/available">Available tests for registration</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link><Link to="/dash/result">Result</Link></Nav.Link>
+  <Nav.Link><Link to="/dash/previous">Previous Tests</Link></Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+  <Nav.Link> <Link to="/dash/cancelled">Cancelled Tests</Link></Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+  <Nav.Link><Link to="/dash/result">Result</Link></Nav.Link>
   </Nav.Item>
 </Nav>
+<Outlet></Outlet>
+</div>
 </Container>
-      <Outlet></Outlet>
-    </div>
+      
+    
   );
 }

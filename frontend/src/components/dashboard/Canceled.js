@@ -21,6 +21,7 @@ const Canceled = () => {
   }, [nationalId]);
   return (
     <div>
+      <Container>
       {data.map((elem, i) => {
         return (
           <Container fluid="md" id="availableCard">
@@ -52,6 +53,7 @@ const Canceled = () => {
           </Container>
         );
       })}
+      </Container>
     </div>
   );
 };

@@ -28,6 +28,7 @@ export default function Result()
         });
      }, [nationalId]);
     return (
+      <Container>
       <div>
       {data.map((elem, i) => {
         return (
@@ -53,5 +54,6 @@ export default function Result()
         );
       })}
     </div>
+    </Container>
     )
 }

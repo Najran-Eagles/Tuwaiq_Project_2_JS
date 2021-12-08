@@ -22,6 +22,7 @@ const PreviousTests = () => {
       });
   }, [nationalId]);
   return (
+    <Container>
     <div>
       {data.map((elem, i) => {
         return (
@@ -34,7 +35,6 @@ const PreviousTests = () => {
                     <Card.Text>
                     <b>Center Office:</b> {elem.centerOffice}
                     </Card.Text>
-
                     <Card.Text>
                     <b>Attendance Status:</b> {elem.attendanceStatus}
                     </Card.Text>
@@ -47,7 +47,6 @@ const PreviousTests = () => {
                     <Card.Text>
                     <b>Payment Method:</b> {elem.paymentMethod}
                     </Card.Text> 
-                    {/* <Button variant="primary">More details</Button> */}
                   </Card.Body>
                 </Card>
               </Col>
@@ -56,6 +55,7 @@ const PreviousTests = () => {
         );
       })}
     </div>
+    </Container>
   );
 };
 export default PreviousTests;
