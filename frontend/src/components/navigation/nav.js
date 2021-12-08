@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navigation.css";
 import Button from "@restart/ui/esm/Button";
@@ -19,7 +19,7 @@ export default function MyNav(props) {
       <Navbar id="nafbar">
         <Container>
           <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-start">
+          <Navbar.Collapse className="justify-content-end">
             <Button id="btnLogOut" onClick={click}>
               Log out
             </Button>
