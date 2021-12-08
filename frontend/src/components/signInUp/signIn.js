@@ -7,10 +7,6 @@ import { BsCaretRightSquare } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./signInUp.css";
-<<<<<<< HEAD
-//  import { Container } from "react-bootstrap";
-=======
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
 import { Card, Container, Row, Col, Alert } from "react-bootstrap";
 
 export default function SignIn(props) {
@@ -44,7 +40,6 @@ export default function SignIn(props) {
         console.log(err);
       });
   }
-<<<<<<< HEAD
   return ( 
   <Container>
     <Row>
@@ -99,77 +94,15 @@ export default function SignIn(props) {
           <Card.Header>
           <Col>
           <Button variant="link">You Don't Have Qiyas Account ?</Button>
-=======
-  return (
-    <Container>
-      <Row>
-        <Col className="col-4">
-          <Card id="signInCard">
-            <Card.Header as="h6">Login With A Qiyas Account</Card.Header>
-            <Card.Body>
-              <Form onSubmit={handleSubmit}>
-                <Alert variant="danger" style={{ display: display }}>
-                  User not found!
-                </Alert>
-                <Form.Label>
-                  <b>National ID *</b>
-                </Form.Label>
-                <InputGroup className="mb-3">
-                  <InputGroup.Text id="basic-addon1">
-                    <FaUser />
-                  </InputGroup.Text>
-                  <FormControl
-                    placeholder="National ID"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    autoFocus
-                    type="text"
-                    value={nationalId}
-                    onChange={(e) => {
-                      setNationalId(e.target.value);
-                    }}
-                  />
-                </InputGroup>
-                <Form.Label>
-                  <b>Password *</b>
-                </Form.Label>
-                <InputGroup className="mb-3">
-                  <InputGroup.Text id="basic-addon1">
-                    <FaLock />
-                  </InputGroup.Text>
-                  <FormControl
-                    placeholder="Password"
-                    type="password"
-                    value={password}
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                    }}
-                  />
-                </InputGroup>
-                <Button variant="primary" type="submit" disabled={!validateForm()}>
-                  Login
-                </Button>
-              </Form>
-            </Card.Body>
-            <Card.Header>
-              <Col>
-              <Button variant="link">You Don't Have Qiyas Account ?</Button>
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
               <Link to="/signUp">
                 <Button id="btn2" variant="warning">
                   Rigster Now!
                 </Button>{" "}
               </Link>
               </Col>
-<<<<<<< HEAD
               </Card.Header>
             </Card>
             </Col>
-=======
-            </Card.Header>
-          </Card>
-        </Col>
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
         <Col className="col-8">
           <Card id="demoCard">
             <Card.Header as="h6">Demo Show</Card.Header>
@@ -192,23 +125,13 @@ export default function SignIn(props) {
               <Link to="test/">
                 <Button id="btn3" variant="primary" active>
                   <BsCaretRightSquare/>
-<<<<<<< HEAD
                   Play
                   </Button>{" "}
-=======
-                    Play
-                </Button>{" "}
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
               </Link>
             </Card.Body>
           </Card>
         </Col>
-<<<<<<< HEAD
        </Row>
      </Container>
-=======
-      </Row>
-    </Container>
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
   );
 }
