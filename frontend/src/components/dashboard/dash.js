@@ -24,25 +24,14 @@ export default function Dash() {
         <Row>
           <Col>
             <Nav.Item>
-<<<<<<< HEAD
             <Nav.Link eventKey="1" >
                 <IoHome />
                 <b>Home page</b>
-=======
-              <Nav.Link eventKey="1" >
-                <IoHome />
-                Home page
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
               </Nav.Link>
             </Nav.Item>
           </Col>
           <Col>
-<<<<<<< HEAD
           <NavDropdown title="E-Services" id="e-services">
-=======
-
-            <NavDropdown title="E-Services" id="e-services">
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
               <NavDropdown.Item eventKey="4.1">Check Tests</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.2">Our policy</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.4">Complains</NavDropdown.Item>

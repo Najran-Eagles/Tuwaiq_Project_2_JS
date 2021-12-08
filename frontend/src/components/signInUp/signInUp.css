@@ -13,29 +13,25 @@
   #signInCard{
     margin-top: 20px;
   }
-  #demoCard{
+  /* #demoCard{
     margin-top: 20px;
-  }
+
+  } */
   .signIn{
     margin: 50px;
     max-width: 320px;
     padding: 300px;
     display: inline;
-
+  }
 
   #form {
     border: 1px solid rgb(224, 222, 222);    
 
-<<<<<<< HEAD
     /* border-radius: 5px; */
 
   }
-  #signInCard{
-    margin-top: 20px;
-  }
-  #demoCard{
-    margin-top: 20px;
-  }
+
+
   .signIn{
     margin: 50px;
     max-width: 320px;
@@ -43,10 +39,6 @@
     display: inline;
   }
 }
-=======
-  }
-
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
   #card{
     border:solid ;
     border-radius: 20px;
@@ -89,29 +81,17 @@
   }
   
   
-<<<<<<< HEAD
   
   
   #sinUpform{
     border: 1px solid rgb(224, 222, 222);
-=======
- 
- #sinUpform{
-  border: 1px solid rgb(224, 222, 222);
-
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
     width: 500px;
     size: 200px;
     border-radius:20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-<<<<<<< HEAD
   } 
-=======
-
-  }
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
   #formCol{
     border: 1px solid rgb(224, 222, 222);
       width: 200px;
@@ -124,44 +104,24 @@
       /* margin-left: 70px;*/
       /* margin-right: 300px;  */
       margin-top: 30px;
-<<<<<<< HEAD
-
-    }
-     /* #demoCard{ */
-      /* border: 1px solid rgb(224, 222, 222); */
-      /* width: 500px; */
-      /* height: 200px; */
-      /* size: 00px; */
-      /* border-radius:10px; */
-      /* display: flex; */
-      /* flex-direction: row; */
-      /* justify-content: space-around; */
-      /* margin-left: 70px;*/
-      /* margin-left: 50px;  */
-      /* margin-top: 30px; */
-    /* }  */
-=======
   
     }
-    /* #demoCard{
-      /* border: 1px solid rgb(224, 222, 222); */
-      width: 500px;
-      height: 200px;
-      /* size: 00px; */
-      border-radius:10px;
+    #demoCard{
+       border: 1px solid rgb(224, 222, 222);
+      width: 700px;
+      height: 220px;
+      border-radius:6px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       /* margin-left: 70px;*/
       margin-left: 50px; 
-      margin-top: 30px;
-    } */
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
+      margin-top: 20px;
+    } 
 
 
 #signinList {
   margin: 5px;
-<<<<<<< HEAD
   font-family: “Franklin Gothic Medium”, “Arial Narrow”, Arial, sans-serif;
 
   border: 1px solid rgb(224, 222, 222);
@@ -176,36 +136,10 @@
   font-family: “Franklin Gothic Medium”, “Arial Narrow”, Arial, sans-serif;
 
   border: 1px solid rgb(224, 222, 222);
-=======
- 
-  font-family: “Franklin Gothic Medium”, “Arial Narrow”, Arial, sans-serif;
-
-  border: 1px solid rgb(224, 222, 222);
-  border-radius: 10px;
-  border-width: 100%;
-  size: 100%;
-  
-}
-#signinList1{
-  margin: 5px;
-  font-family: “Franklin Gothic Medium”, “Arial Narrow”, Arial, sans-serif;
-
-  border: 1px solid rgb(224, 222, 222);
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
   border-radius: 10px;
 }
 
 #card {
-<<<<<<< HEAD
-  border-radius: 20px;
-  border: 1px solid rgb(224, 222, 222);
-  width: 500px;
-  size: 200px;
-  border-radius:20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-=======
   /* border: solid; */
   border-radius: 20px;
   border: 1px solid rgb(224, 222, 222);
@@ -215,7 +149,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
 }
 #card1 {
   border-radius: 20px;
@@ -244,10 +177,6 @@
   height: 38px;
   text-align: center;
   margin-left: 20px;
-<<<<<<< HEAD
-=======
-  /* margin: 1px, 1px, 1px, 1px; */
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
 }
 #list{
   /* margin-top: 50px; */
@@ -261,19 +190,11 @@
   width: 100%;
 }
 #regBtn{
-<<<<<<< HEAD
   width: 120px;
-=======
-  width: 113px;
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
   height: 30px;
   margin: 1px;
   font-size: 13px;
   color: aliceblue;
   font-family: Georgia, “Times New Roman”, Times, serif;
   float: left;
-<<<<<<< HEAD
 } 
-=======
-}
->>>>>>> 5da28199adcba6610b7ef036cd68cd839923ee08
