@@ -17,7 +17,8 @@ export default function MyNav(props) {
 
 
       <Navbar id="nafbar">
-        <Container>
+       <Container>
+        
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Button id="btnLogOut" onClick={click}>
@@ -28,7 +29,8 @@ export default function MyNav(props) {
               <p>{props.name}</p>
             </Navbar.Text>
           </Navbar.Collapse>
-        </Container>
+          
+          </Container>
       </Navbar>
 
     </div>
